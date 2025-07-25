@@ -22,7 +22,7 @@
 
 .animal {
   padding: 16px;
-
+  font-size: 32px;
   /*
     The animals are very small.
     The size of the emojis is controlled via the font size.
@@ -56,6 +56,7 @@
 
   💡 You'll need to use a pseudo-class selector for each animal.
 */
+
 .animal.crocodile:hover {
   background-color: blue;
   padding: 8%;
@@ -69,3 +70,4 @@
   padding: 8%;
 }
 /* */
+
