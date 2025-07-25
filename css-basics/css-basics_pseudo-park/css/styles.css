@@ -56,15 +56,15 @@
 
   💡 You'll need to use a pseudo-class selector for each animal.
 */
-.animal.crocodile {
+.animal.crocodile.hover {
   background-color: blue;
   padding: 8%;
 }
-.animal.giraffe {
+.animal.giraffe.hover {
   background-color: lightgreen;
   padding: 8%;
 }
-.animal.dino {
+.animal.dino.hover {
   background-color: lightsalmon;
   padding: 8%;
 }
