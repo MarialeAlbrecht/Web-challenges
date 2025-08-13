@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+let title = "7 wonder";
+let author = "Pepe";
+let rating = 2.2;
+let sales = 8;
 // --^-- write your code here --^--
 
 /*
@@ -27,6 +30,16 @@ Then:
 */
 
 // --v-- write your code here --v--
+function booksInfo(title, author, rating, sales) {
+  console.log(
+    "Title: " + title,
+    "Author: " + author,
+    "Rating: " + rating,
+    "Sales: " + sales
+  );
+}
+booksInfo("The Lord of the Javascript", "Mario", 4.2, 120);
+booksInfo("The Lord of the Javascript", "Mario", 6, 150);
 
 // --^-- write your code here --^--
 
@@ -40,5 +53,26 @@ Then:
 */
 
 // --v-- write your code here --v--
+function logBookData(title, author, rating, sales) {
+  console.log(
+    "Title: " + title,
+    "Author: " + author,
+    "Rating: " + rating,
+    "Sales: " + sales
+  );
+}
+
+title = "The Lord of the Javascript";
+author = "Mario";
+rating = 10;
+sales = 220;
+
+logBookData(title, author, rating, sales);
+
+rating++ && sales++;
+logBookData(title, author, rating, sales);
+
+rating++ && sales++;
+logBookData(title, author, rating, sales);
 
 // --^-- write your code here --^--
