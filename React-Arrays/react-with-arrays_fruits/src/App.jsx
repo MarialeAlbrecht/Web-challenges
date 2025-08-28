@@ -33,7 +33,6 @@ export default function App() {
     <div className="app">
       {fruits.map((fruit) => (
         <li key={fruit.id}>
-          {" "}
           <Card name={fruit.name} color={fruit.color} />
         </li>
       ))}
