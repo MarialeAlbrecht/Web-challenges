@@ -1,7 +1,26 @@
+import Head from "next/head";
+import { introduction } from "../resources/lib/data";
+import Link from "next/link";
+import { volumes } from "../resources/lib/data";
+
 export default function HomePage() {
   return (
-    <div>
-      <h1>Hello from Next.js</h1>
-    </div>
+    <>
+      <Head>
+        <title>LOTR</title>
+      </Head>
+      <main>
+        <h1>Lord of the Rings</h1>
+        <p>{introduction}</p>
+        <h2>All Volumes</h2>
+        <ul>
+          {volumes.map((volume) => (
+            <li key={volume.slug}>
+              <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </main>
+    </>
   );
 }
